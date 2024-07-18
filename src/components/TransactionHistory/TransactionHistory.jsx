@@ -4,7 +4,6 @@ import clsx from 'clsx'
 
 
 const TransactionHistory = ({ items }) => {
-    let rowColor = 1;
     return (
 <table className={clsx(css.table)}>
   <thead>
@@ -14,10 +13,9 @@ const TransactionHistory = ({ items }) => {
       <th className={clsx(css.pixel, css.headerPixel)}>Currency</th>
     </tr>
   </thead>
-            <tbody>{items.map(({ type, amount, currency, id }) => {
-                rowColor++;
+            <tbody>{items.map(({ type, amount, currency, id}, index) => {
                 return (
-                <tr key={id} className={clsx(rowColor % 2 && css.rowBackgroundColor)}>
+                <tr key={id} className={clsx(index % 2 && css.rowBackgroundColor)}>
                     <td className={clsx(css.pixel)}>{type}</td>
                     <td className={clsx(css.pixel)}>{amount}</td>
                     <td className={clsx(css.pixel)}>{currency}</td>
