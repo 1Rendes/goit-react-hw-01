@@ -1,0 +1,59 @@
+.profile {
+  border: 4px solid black;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profileBlock {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profilePhoto {
+  border-radius: 50%;
+  background-color: grey;
+  width: 200px;
+}
+.mainSign {
+  padding: 25px 0;
+  font-size: 48px;
+  font-weight: 600;
+}
+.secondarySign {
+  color: grey;
+  font-size: 36px;
+  font-weight: 400;
+}
+.listStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: rgb(205, 205, 205);
+  color: black;
+  width: 100%;
+  border-top: 4px solid grey;
+}
+.elStyle {
+  padding: 20px 0;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.elDivider {
+  border-left: 4px solid grey;
+  border-right: 4px solid grey;
+}
+.elName {
+  font-size: 36px;
+  font-weight: 400;
+}
+.elValue {
+  font-size: 36px;
+  font-weight: 700;
+}

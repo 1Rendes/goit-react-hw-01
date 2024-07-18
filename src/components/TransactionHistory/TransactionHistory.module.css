@@ -1,0 +1,19 @@
+.table {
+  margin-top: 40px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+.pixel {
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 5px 35px;
+  font-size: 14px;
+}
+.headerPixel {
+  background-color: rgb(76, 76, 76);
+  color: white;
+}
+.rowBackgroundColor {
+  background-color: rgb(204, 204, 204);
+}
